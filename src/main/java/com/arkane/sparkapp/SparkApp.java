@@ -3,14 +3,8 @@
  */
 package com.arkane.sparkapp;
 
-import java.util.HashMap;
-import java.util.Map;
-import spark.Request;
-import spark.Response;
-import spark.ModelAndView;
-import spark.template.resources;
+//import sparkapp.resources;
 import static spark.Spark.get;
-import static spark.Spark.staticFileLocation;
 
 public class SparkApp {
     public String getGreeting() {
@@ -20,6 +14,6 @@ public class SparkApp {
     public static void main(String[] args) {
         System.out.println(new SparkApp().getGreeting());
         get("/first", (req, res) -> "First Spark application");    
-        get("/hello/:name", (req, res)->"Hello " + req.params(":name"));
+//        get("/hello/:name", (req, res)->"Hello " + req.params(":name"));
     }
 }

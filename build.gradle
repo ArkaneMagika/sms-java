@@ -22,16 +22,42 @@ repositories {
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
-    compile 'com.google.guava:guava:22.0'
+    //Spark Java Core
+    // https://mvnrepository.com/artifact/com.sparkjava/spark-core
     compile 'com.sparkjava:spark-core:2.6.0'
-    compile 'org.slf4j:slf4j-simple:1.7.13'
-    compile 'com.sparkjava:spark-template-thymeleaf:2.3'
+    
+    //SLF4J API
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
+
+    
+    //PostgreSQL Connector
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
+
+    //Bootstrap
+    // https://mvnrepository.com/artifact/org.webjars/bootstrap
+    compile group: 'org.webjars', name: 'bootstrap', version: '3.3.5'
+
+    // Angular Framework
+    // https://mvnrepository.com/artifact/org.webjars.bower/angular
+    compile group: 'org.webjars.bower', name: 'angular', version: '1.6.6'
+
+    //Freemarker Template generator
+    // https://mvnrepository.com/artifact/com.sparkjava/spark-template-freemarker
+    compile group: 'com.sparkjava', name: 'spark-template-freemarker', version: '2.3'
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
+    
+    //Use SLF4J to log changes
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.12'
+    
 }
 
 // Define the main class for the application
+archivesBaseName = "sparkthymeleaf"
 version = '1.0'
-mainClassName = 'SparkApp'
+mainClassName = 'com.arkane.sparkdemi.SparkDemo'
 
