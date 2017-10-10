@@ -30,34 +30,21 @@ dependencies {
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
 
-    
     //PostgreSQL Connector
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
 
-    //Bootstrap
-    // https://mvnrepository.com/artifact/org.webjars/bootstrap
-    compile group: 'org.webjars', name: 'bootstrap', version: '3.3.5'
+    //FreeMarker Template Generator
+    // https://mvnrepository.com/artifact/org.freemarker/freemarker
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.23'
 
-    // Angular Framework
-    // https://mvnrepository.com/artifact/org.webjars.bower/angular
-    compile group: 'org.webjars.bower', name: 'angular', version: '1.6.6'
-
-    //Freemarker Template generator
-    // https://mvnrepository.com/artifact/com.sparkjava/spark-template-freemarker
-    compile group: 'com.sparkjava', name: 'spark-template-freemarker', version: '2.3'
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
-    
-    //Use SLF4J to log changes
-    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
-    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.12'
-    
 }
 
 // Define the main class for the application
-archivesBaseName = "sparkthymeleaf"
-version = '1.0'
-mainClassName = 'com.arkane.sparkdemi.SparkDemo'
+archivesBaseName = "sparkfreemarker"
+version = 'alpha-1.0'
+mainClassName = 'SparkDemo'
 
