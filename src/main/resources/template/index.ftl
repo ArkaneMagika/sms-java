@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap-flatly.css">
-  <link rel="shortcut icon" href="../icons/favicon1.png" type="image/x-icon" sizes="144x144">
+  <link rel="stylesheet" type="text/css" href="../web/css/bootstrap-flatly.css">
+  <link rel="shortcut icon" href="/icons/favicon1.png" type="image/x-icon" sizes="144x144">
   <title>Spark Demonstration | Homepage</title>
 </head>
 
@@ -39,7 +39,7 @@
           </div>
         </div> -->
     <hr>
-    <p>Hello {name}</p>
+    <p>Hello!</p>
     <p>Welcome to the Spark Java Demo. In this demo I will be demonstrating how Spark Java works usign the Model View Controller (MVC) as well as a template generator.</p>
     <p>Eventually, this demo will <strong><em>connect to a SQL database, an in-browser text editor and file upload for authenticated users. Their files will be stored in user specified folders and can only be accessed by the administrator or the owner of the folder. </em></strong></p>
 
@@ -60,7 +60,7 @@
           Demonstration purposes only</small>
     </footer>
   </div>
-  <script src="../js/jquery-3.2.1.js" charset="utf-8">
+  <script src="../web/js/jquery-3.2.1.js" charset="utf-8">
     < /script <
     /body> <
     /html>

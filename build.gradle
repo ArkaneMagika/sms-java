@@ -23,28 +23,38 @@ repositories {
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     //Spark Java Core
-    // https://mvnrepository.com/artifact/com.sparkjava/spark-core
-    compile 'com.sparkjava:spark-core:2.6.0'
+//    // https://mvnrepository.com/artifact/com.sparkjava/spark-core
+//    compile 'com.sparkjava:spark-core:2.6.0'
+//    
+//    //SLF4J API
+//    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+//    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
+//
+//    //PostgreSQL Connector
+//    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+//    compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
+//
+//    //FreeMarker Template Generator
+//    // https://mvnrepository.com/artifact/org.freemarker/freemarker
+//    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.23'
     
-    //SLF4J API
-    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
-
-    //PostgreSQL Connector
-    // https://mvnrepository.com/artifact/org.postgresql/postgresql
-    compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
-
-    //FreeMarker Template Generator
-    // https://mvnrepository.com/artifact/org.freemarker/freemarker
-    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.23'
-
+    //Twilio SDK
+    compile group: "com.twilio.sdk", name: "twilio", version: "7.11.+"
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
 
 // Define the main class for the application
-archivesBaseName = "sparkfreemarker"
-version = 'alpha-1.0'
-mainClassName = 'SparkDemo'
+archivesBaseName = "biztech"
+version = 'alpha-1.1.1'
+mainClassName = 'sms.twilioMessaging'
+
+sourceCompatibility = 1.8
+jar{
+    manifest{
+        attributes 'Implementation-Title' : 'BizTech SMS Messaging',
+                    'Implementation-Version': version
+    }
+}
 
