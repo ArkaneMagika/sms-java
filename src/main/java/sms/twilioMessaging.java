@@ -22,10 +22,10 @@ import javax.swing.JOptionPane;
  */
 public class twilioMessaging {
 
-    public static final String ACCOUNT_SID = "AC788b51144dd24af8f0191d60a2070936";
+    public static final String ACCOUNT_SID = "ACCOUNT_SID_GOES_HERE";
 
 //    Please note token used in this example is for testing purposes only. This will not send a SMS to a phone number.
-    public static final String AUTH_TOKEN = "4232e2246cb9a0a912a7d5b63501edcd";
+    public static final String AUTH_TOKEN = "AUTH_TOKEN_GOES_HERE";
 
     public static void main(String[] args) {
 
